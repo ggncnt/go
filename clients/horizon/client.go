@@ -281,6 +281,8 @@ func (c *Client) stream(
 		query.Set("cursor", string(*cursor))
 	}
 
+	client := http.Client{}
+
 	for {
 		req, err := http.NewRequest("GET", fmt.Sprintf("%s?%s", baseURL, query.Encode()), nil)
 		if err != nil {
@@ -288,7 +290,8 @@ func (c *Client) stream(
 		}
 		req.Header.Set("Accept", "text/event-stream")
 
-		resp, err := c.HTTP.Do(req)
+		// Make sure we don't use c.HTTP that can have Timeout set.
+		resp, err := client.Do(req)
 		if err != nil {
 			return err
 		}
