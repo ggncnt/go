@@ -271,9 +271,8 @@ type Payment struct {
 		} `json:"transaction"`
 	} `json:"_links"`
 
-	TransactionHash string `json:"transaction_hash"`
-	SourceAccount   string `json:"source_account"`
-	CreatedAt       string `json:"created_at"`
+	SourceAccount string `json:"source_account"`
+	CreatedAt     string `json:"created_at"`
 
 	// create_account and account_merge field
 	Account string `json:"account"`
@@ -292,9 +291,6 @@ type Payment struct {
 	AssetCode   string `json:"asset_code"`
 	AssetIssuer string `json:"asset_issuer"`
 	Amount      string `json:"amount"`
-
-	// account_merge
-	Into string `json:"into"`
 
 	// transaction fields
 	TransactionHash string `json:"transaction_hash"`
