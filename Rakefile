@@ -25,11 +25,11 @@ namespace :xdr do
     FileUtils.mkdir_p "xdr"
     FileUtils.rm_rf "xdr/*.x"
 
-    client = Octokit::Client.new(:netrc => true)
+    client = Octokit::Client.new(:netrc => false)
 
     HAYASHI_XDR.each do |src|
       local_path = "xdr/" + File.basename(src)
-      encoded    = client.contents("stellar/stellar-core", path: src).content
+      encoded    = client.contents("ggncnt/stellar-core", path: src, query: {ref: 'prod'}).content
       decoded    = Base64.decode64 encoded
 
       IO.write(local_path, decoded)
