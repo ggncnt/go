@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/stellar/go/amount"
-	"github.com/stellar/go/xdr"
+	"github.com/ggncnt/go/amount"
+	"github.com/ggncnt/go/xdr"
 )
 
 var Tests = []struct {

@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/stellar/go/clients/horizon"
-	"github.com/stellar/go/strkey"
-	"github.com/stellar/go/support/render/hal"
-	"github.com/stellar/go/support/render/problem"
+	"github.com/ggncnt/go/clients/horizon"
+	"github.com/ggncnt/go/strkey"
+	"github.com/ggncnt/go/support/render/hal"
+	"github.com/ggncnt/go/support/render/problem"
 )
 
 // FriendbotHandler causes an account at `Address` to be created.

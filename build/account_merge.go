@@ -1,8 +1,8 @@
 package build
 
 import (
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/ggncnt/go/support/errors"
+	"github.com/ggncnt/go/xdr"
 )
 
 // AccountMerge groups the creation of a new AccountMergeBuilder with a call to
