@@ -20,7 +20,7 @@ type Manager struct {
 // NewManager returns a new manager
 func NewManager() *Manager {
 	return &Manager{
-		MaxSize: 1024, //TODO: make MaxSize configurable
+		MaxSize: 10240, //TODO: make MaxSize configurable
 		queues:  map[string]*Queue{},
 	}
 }
