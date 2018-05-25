@@ -3,8 +3,8 @@ package resource
 import (
 	"context"
 
-	"github.com/stellar/go/amount"
-	"github.com/stellar/go/services/horizon/internal/paths"
+	"github.com/ggncnt/go/amount"
+	"github.com/ggncnt/go/services/horizon/internal/paths"
 )
 
 func (this *Path) Populate(ctx context.Context, q paths.Query, p paths.Path) (err error) {

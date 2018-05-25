@@ -3,10 +3,10 @@ package resource
 import (
 	"context"
 
-	"github.com/stellar/go/amount"
-	"github.com/stellar/go/services/horizon/internal/assets"
-	"github.com/stellar/go/services/horizon/internal/db2/core"
-	"github.com/stellar/go/xdr"
+	"github.com/ggncnt/go/amount"
+	"github.com/ggncnt/go/services/horizon/internal/assets"
+	"github.com/ggncnt/go/services/horizon/internal/db2/core"
+	"github.com/ggncnt/go/xdr"
 )
 
 func (this *Balance) Populate(ctx context.Context, row core.Trustline) (err error) {
