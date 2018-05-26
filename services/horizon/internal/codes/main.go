@@ -72,8 +72,6 @@ func String(code interface{}) (string, error) {
 			return "op_bad_auth", nil
 		case xdr.OperationResultCodeOpNoAccount:
 			return "op_no_source_account", nil
-		case xdr.OperationResultCodeOpNotSupported:
-			return "op_not_supported", nil
 		}
 	case xdr.CreateAccountResultCode:
 		switch code {
@@ -230,8 +228,6 @@ func String(code interface{}) (string, error) {
 			return "op_immutable_set", nil
 		case xdr.AccountMergeResultCodeAccountMergeHasSubEntries:
 			return "op_has_sub_entries", nil
-		case xdr.AccountMergeResultCodeAccountMergeSeqnumTooFar:
-			return "op_seq_num_too_far", nil
 		}
 	case xdr.InflationResultCode:
 		switch code {
@@ -239,13 +235,6 @@ func String(code interface{}) (string, error) {
 			return OpSuccess, nil
 		case xdr.InflationResultCodeInflationNotTime:
 			return "op_not_time", nil
-		}
-	case xdr.BumpSequenceResultCode:
-		switch code {
-		case xdr.BumpSequenceResultCodeBumpSequenceSuccess:
-			return OpSuccess, nil
-		case xdr.BumpSequenceResultCodeBumpSequenceBadSeq:
-			return "op_bad_seq", nil
 		}
 	}
 

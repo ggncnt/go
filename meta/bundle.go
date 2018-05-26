@@ -130,9 +130,6 @@ func (b *Bundle) changes(target xdr.LedgerKey, maxOp int) []xdr.LedgerEntryChang
 	switch b.TransactionMeta.V {
 	case 0:
 		operationMetas = b.TransactionMeta.MustOperations()
-	case 1:
-		operationMetas = b.TransactionMeta.V1.Operations
-		allChanges = append(allChanges, b.TransactionMeta.V1.TxChanges...)
 	}
 
 	for i, op := range operationMetas {
