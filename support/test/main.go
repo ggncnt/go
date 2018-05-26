@@ -7,7 +7,7 @@ import (
 	"bytes"
 
 	"github.com/sirupsen/logrus"
-	"github.com/stellar/go/support/log"
+	"github.com/ggncnt/go/support/log"
 	"golang.org/x/net/context"
 )
 

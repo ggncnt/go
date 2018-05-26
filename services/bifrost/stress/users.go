@@ -11,11 +11,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/stellar/go/build"
-	"github.com/stellar/go/clients/horizon"
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/services/bifrost/common"
-	"github.com/stellar/go/services/bifrost/server"
+	"github.com/ggncnt/go/build"
+	"github.com/ggncnt/go/clients/horizon"
+	"github.com/ggncnt/go/keypair"
+	"github.com/ggncnt/go/services/bifrost/common"
+	"github.com/ggncnt/go/services/bifrost/server"
 	"golang.org/x/net/context"
 )
 

@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/ggncnt/go/support/errors"
+	"github.com/ggncnt/go/xdr"
 	"golang.org/x/net/context"
 )
 

@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/stellar/go/amount"
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/services/horizon/internal/httpx"
-	"github.com/stellar/go/services/horizon/internal/render/hal"
-	"github.com/stellar/go/xdr"
+	"github.com/ggncnt/go/amount"
+	"github.com/ggncnt/go/services/horizon/internal/db2/history"
+	"github.com/ggncnt/go/services/horizon/internal/httpx"
+	"github.com/ggncnt/go/services/horizon/internal/render/hal"
+	"github.com/ggncnt/go/xdr"
 )
 
 func (this *Ledger) Populate(ctx context.Context, row history.Ledger) {

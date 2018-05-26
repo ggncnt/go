@@ -1,9 +1,9 @@
 package effects
 
 import (
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/services/horizon/internal/render/hal"
-	"github.com/stellar/go/services/horizon/internal/resource/base"
+	"github.com/ggncnt/go/services/horizon/internal/db2/history"
+	"github.com/ggncnt/go/services/horizon/internal/render/hal"
+	"github.com/ggncnt/go/services/horizon/internal/resource/base"
 	"golang.org/x/net/context"
 )
 

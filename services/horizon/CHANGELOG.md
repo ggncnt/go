@@ -28,7 +28,7 @@ This release is a bug fix release for v0.12.0.  *Please see the upgrade notes be
 
 ### Bug fixes
 
-- Fixed an issue caused by un-migrated trade rows. (https://github.com/stellar/go/issues/357)
+- Fixed an issue caused by un-migrated trade rows. (https://github.com/ggncnt/go/issues/357)
 - Command line flags are now useable for subcommands of horizon.
 
 
